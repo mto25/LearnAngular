@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exo1';
+  title = 'someTitle';
   firstName = 'Mto';
+  constructor() {
+    // tslint:disable-next-line
+    let i = 0;
+  }
 }
