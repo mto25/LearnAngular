@@ -63,8 +63,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "exo1:build"
-          },
+            "browserTarget": "exo1:build",
+            "port": 4204,
+            "host":"0.0.0.0"
+           },
           "configurations": {
             "production": {
               "browserTarget": "exo1:build:production"
