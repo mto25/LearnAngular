@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  background: #eee;
+}
+
+img {
+  width: 8em;
+}
+
+

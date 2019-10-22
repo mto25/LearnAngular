@@ -1,0 +1,10 @@
+
+:host {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background: rgb(197, 196, 196);
+}
+

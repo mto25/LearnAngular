@@ -1,8 +1,13 @@
 header {
-  height: 12em;
+  display: flex;
+  align-items: center;
+  height: 10em;
   background: #eee;
 }
-
+span {
+  font-size : 25;
+  font-weight: bold;
+}
 img {
-  width: 10em;
+  width: 8em;
 }
