@@ -1,0 +1,16 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+$sideSize :8em;
+
+button {
+  height: $sideSize;
+  width: $sideSize;
+  margin: 1em;
+}
+
+h1 {
+  text-align: center;
+}

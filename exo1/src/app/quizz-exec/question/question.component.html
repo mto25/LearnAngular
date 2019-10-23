@@ -1,1 +1,14 @@
-<p>question works!</p>
+<main>
+  <h1>quizz: Les capitales d'Europe</h1>
+  <p>Quelle est la capitale de la BelgiqueB</p>
+  <form>
+    <div>
+      <label *ngFor="let letter of ['A','B','C','D']">
+        <input type="radio">
+        <span class="letter">{{letter}}</span>
+        <span>Brux</span>
+      </label>
+    </div>
+    <button class="primary" routerLink="/score">Suivant</button>
+  </form>
+</main>

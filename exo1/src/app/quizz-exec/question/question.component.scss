@@ -1,0 +1,29 @@
+label {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+
+  input {
+    width: 3em;
+  }
+
+  span.letter {
+    width: 2em;
+  }
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 2em;
+  align-self: flex-end;
+}
