@@ -20,12 +20,12 @@ button {
     &:hover {
       // text-decoration: underline;
       cursor: pointer;
-      background-color: #ccc;
-      border: 0.1em solid #ccc;
+      background-color: #ddd;
+      border: 0.1em solid #ddd;
     }
     &:active{
-      background-color: #777;
-      border: 0.1em solid #777;
+      background-color: #ccc;
+      border: 0.1em solid #ccc;
     }
   }
   &.primary{
@@ -35,8 +35,8 @@ button {
       &:hover {
         // text-decoration: underline;
         cursor: pointer;
-        background-color: #ccc;
-        border: 0.1em solid #ccc;
+        background-color: #666;
+        border: 0.1em solid #666;
       }
       &:active{
         background-color: #777;
@@ -61,9 +61,10 @@ main {
   padding: 0 0.5em;
   max-width: 40em;
 }
-input
+input,textarea
 {
   width: 100%;
   border: 0.1em solid black;
   padding: 0.5em 1em;
 }
+

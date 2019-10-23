@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+h1 {
+  text-align: center;
+  margin : 0.5em 0;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin: 1em;
+  }
+
+  ;
+  padding: 0.5em 0;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+}
+
+input[type="radio"] {
+  width: 4em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin:1em 0;
+}
