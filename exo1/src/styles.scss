@@ -12,18 +12,40 @@ body {
 button {
 
   background-color: #eee;
-  border: 0.1em solid black;
+  border: 0.1em solid #eee;
   padding: 0.5em 1em;
 
 
   &:not(:disabled) {
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
       cursor: pointer;
       background-color: #ccc;
+      border: 0.1em solid #ccc;
     }
     &:active{
-      background-color: yellow;
+      background-color: #777;
+      border: 0.1em solid #777;
+    }
+  }
+  &.primary{
+    background-color: #444;
+    border: 0.1em solid #444;
+    &:not(:disabled) {
+      &:hover {
+        // text-decoration: underline;
+        cursor: pointer;
+        background-color: #ccc;
+        border: 0.1em solid #ccc;
+      }
+      &:active{
+        background-color: #777;
+        border: 0.1em solid #777;
+      }
+    }
+    &.primary{
+      background-color: #555;
+      border: 0.1em solid #555;
     }
   }
 }
@@ -36,7 +58,8 @@ a {
   }
 }
 main {
-  padding: 0 0.5em
+  padding: 0 0.5em;
+  max-width: 40em;
 }
 input
 {
