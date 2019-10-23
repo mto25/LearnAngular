@@ -1,3 +1,4 @@
+import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./score.component.scss']
 })
 export class ScoreComponent implements OnInit {
-
+  faSmile = faSmile
   constructor() { }
 
   ngOnInit() {

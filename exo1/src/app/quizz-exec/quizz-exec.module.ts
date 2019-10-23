@@ -1,3 +1,4 @@
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +12,7 @@ import { ScoreComponent } from './score/score.component';
   declarations: [ListComponent, QuestionComponent, ScoreComponent],
   imports: [
     CommonModule,
+    FontAwesomeModule,
     QuizzExecRoutingModule
   ]
 })
