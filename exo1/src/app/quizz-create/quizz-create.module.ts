@@ -1,3 +1,4 @@
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -12,6 +13,7 @@ import { FinishedComponent } from './finished/finished.component';
   declarations: [CreateComponent, SetupComponent, AddQuestionComponent, FinishedComponent],
   imports: [
     CommonModule,
+    FontAwesomeModule,
     QuizzCreateRoutingModule
   ]
 })
