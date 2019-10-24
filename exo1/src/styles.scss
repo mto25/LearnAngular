@@ -28,10 +28,10 @@ button {
       border: 0.1em solid #ccc;
     }
   }
-  &.primary{
+  &.primary:not(:disabled){
     background-color: #444;
     border: 0.1em solid #444;
-    &:not(:disabled) {
+
       &:hover {
         // text-decoration: underline;
         cursor: pointer;
@@ -42,7 +42,7 @@ button {
         background-color: #777;
         border: 0.1em solid #777;
       }
-    }
+    
     &.primary{
       background-color: #555;
       border: 0.1em solid #555;

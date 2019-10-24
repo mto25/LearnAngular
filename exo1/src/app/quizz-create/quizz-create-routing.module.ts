@@ -4,7 +4,7 @@ import { SetupComponent } from './setup/setup.component';
 import { CreateComponent } from './create/create.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { create } from 'domain';
+//import { create } from 'domain';
 
 
 const routes: Routes = [

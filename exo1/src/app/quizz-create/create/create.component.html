@@ -5,6 +5,8 @@
       <span>Nom quizz</span>
       <input appAutofocus type="text" formControlName="name" placeholder="Default value">
     </label>
-    <button routerLink="/setup" class="primary">Suivant</button>
+    <button
+    [disabled]="f.invalid"
+    routerLink="/setup" class="primary">Suivant</button>
   </form>
 </main>
