@@ -5,16 +5,15 @@
 *, *::before,*::after{
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif
 }
 
 button {
-
   background-color: #eee;
   border: 0.1em solid #eee;
   padding: 0.5em 1em;
-
 
   &:not(:disabled) {
     &:hover {
@@ -42,7 +41,7 @@ button {
         background-color: #777;
         border: 0.1em solid #777;
       }
-    
+
     &.primary{
       background-color: #555;
       border: 0.1em solid #555;
