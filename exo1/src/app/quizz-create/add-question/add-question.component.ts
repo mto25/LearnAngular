@@ -1,5 +1,8 @@
+import { Question } from './../../question';
+import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { QuizzService } from 'src/app/quizz.service';
 
 @Component({
   selector: 'app-add-question',
@@ -14,12 +17,18 @@ export class AddQuestionComponent implements OnInit {
     answerB: new FormControl('Pris', Validators.required),
     answerC: new FormControl('Rome', Validators.required),
     answerD: new FormControl('Buch', Validators.required),
-    correctAnswer : new FormControl('', Validators.required)
+    correctAnswer: new FormControl('', Validators.required)
   });
 
-  constructor() { }
+  constructor(private quizz: QuizzService, private router: Router) { }
 
   ngOnInit() {
+  }
+
+  submit() {
+    //console.log("test submit add question");
+    this.quizz.addQuestion(this.f.value as Question);
+    this.router.navigateByUrl('/setup');
   }
 
 }

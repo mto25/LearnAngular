@@ -1,6 +1,6 @@
 <main>
   <h1>Add a question</h1>
-  <form [formGroup]="f">
+  <form [formGroup]="f" (ngSubmit)="submit()">
     <label>
       <div>Libelles</div>
       <textarea rows="3" formControlName="label" appAutofocus tabindex="1"></textarea>
@@ -14,8 +14,8 @@
       </label>
     </div>
     <div class="buttons">
-      <button routerLink="/setup" [tabIndex]="7">Cancel</button>
-      <button [disabled]="f.invalid" routerLink="/setup" class="primary" [tabIndex]="8">AddQuestion</button>
+      <button type = "button" routerLink="/setup" [tabIndex]="7">Cancel</button>
+      <button type = "submit" [disabled]="f.invalid" class="primary" [tabIndex]="8">AddQuestion</button>
     </div>
 
   </form>
