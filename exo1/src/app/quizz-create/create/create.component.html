@@ -1,12 +1,14 @@
 <main>
   <h1>creation quizz</h1>
-  <form [formGroup]="f">
+  <form
+    [formGroup]="f"
+    (ngSubmit)="submit()">
     <label>
       <span>Nom quizz</span>
       <input appAutofocus type="text" formControlName="name" placeholder="Default value">
     </label>
     <button
     [disabled]="f.invalid"
-    routerLink="/setup" class="primary">Suivant</button>
+    class="primary">Suivant</button>
   </form>
 </main>

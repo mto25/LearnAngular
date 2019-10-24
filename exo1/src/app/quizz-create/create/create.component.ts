@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -15,9 +16,12 @@ export class CreateComponent implements OnInit {
     )
   });
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
-
+  submit() {
+    //console.log("test submit");
+    this.router.navigateByUrl('/setup');
+  }
 }
