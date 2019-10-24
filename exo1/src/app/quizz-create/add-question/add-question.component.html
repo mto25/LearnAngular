@@ -1,21 +1,21 @@
 <main>
   <h1>Add a question</h1>
-  <form ngNoForm>
+  <form [formGroup]="f">
     <label>
       <div>Libelles</div>
-      <textarea rows="3"></textarea>
+      <textarea rows="3" formControlName="label" appAutofocus tabindex="1"></textarea>
     </label>
     <div>Possible answer</div>
     <div>
-      <label class ="answer" *ngFor="let letter of ['A','B','C','D']">
+      <label class ="answer" *ngFor="let letter of ['A','B','C','D'], let i = index">
         <span>{{letter}}</span>
-        <input type="text">
-        <input type="radio">
+        <input type="text" [formControlName] = "'answer' + letter" [tabIndex]="i+2">
+        <input type="radio" formControlName ="correctAnswer" [value]="letter" [tabIndex]="6">
       </label>
     </div>
     <div class="buttons">
-      <button routerLink="/setup">Cancel</button>
-      <button routerLink="/setup" class="primary">AddQuestion</button>
+      <button routerLink="/setup" [tabIndex]="7">Cancel</button>
+      <button [disabled]="f.invalid" routerLink="/setup" class="primary" [tabIndex]="8">AddQuestion</button>
     </div>
 
   </form>
